@@ -1,0 +1,21 @@
+body{
+  background-color: #fff;
+
+}
+
+#canvas{
+  position: absolute;
+  z-index:1;
+  top: 10px;
+  left: 10px;
+}
+
+
+#video{
+  position: absolute;
+  z-index:0;
+  top: 10px;
+  left: 10px;
+  border: 3px #fff solid;
+  border-radius: 10px;
+}
