@@ -143,8 +143,8 @@ let sketch = function(p){
 
           // let _z = detections.multiHandLandmarks[i][index[j+1]].z;
           p.stroke(hue, 40, 255);
-          p.line(v1.x, v1.y, v2.x, v2.y);
-          p.line(v3.x, v3.y, v1.x, v1.y);
+        //  p.line(v1.x, v1.y, v2.x, v2.y);
+        //  p.line(v3.x, v3.y, v1.x, v1.y);
 
 
           let angle = v3.angleBetween(v2);
@@ -154,10 +154,10 @@ let sketch = function(p){
 
           if(angle>p.PI/6)
           {
-            c = 2*(angle-p.PI/6);
+            c= -1.5*(angle-p.PI/6);
         }else if(angle<p.PI/6)
           {
-            c = (angle-p.PI/6)*2;
+            c = (angle-p.PI/6)*-1.5;
           }
       }
     }
